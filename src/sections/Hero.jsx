@@ -52,7 +52,7 @@ export default function Hero() {
               arquivo="hero-banca.jpg"
               alt="Banca da Delícias do Nordeste com produtos regionais expostos"
               prioridade
-              className="aspect-[4/5] w-full rounded-marca sm:aspect-[5/6]"
+              className="aspect-[16/10] w-full rounded-marca"
             />
             <Figura
               imagem={null}
