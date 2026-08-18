@@ -111,7 +111,7 @@ export function Logo({ tom = 'verde', className = '' }) {
       <img
         src="/imagens/logo.png"
         alt="Delícias do Nordeste — Mercado Natural"
-        className="h-11 w-auto sm:h-12"
+        className="h-16 w-auto sm:h-20"
       />
     </span>
   )
