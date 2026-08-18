@@ -1,4 +1,4 @@
-import { marca, linkWhatsApp } from '../data/site.js'
+﻿import { marca, linkWhatsApp } from '../data/site.js'
 import { Botao, Figura, IconeWhatsApp } from '../components/Primitivos.jsx'
 export default function Hero() {
   return (
@@ -53,12 +53,6 @@ export default function Hero() {
               alt="Banca da Delícias do Nordeste com produtos regionais expostos"
               prioridade
               className="aspect-[16/10] w-full rounded-marca"
-            />
-            <Figura
-              imagem={null}
-              arquivo="hero-detalhe.jpg"
-              alt="Detalhe de produtos naturais a granel"
-              className="absolute -bottom-8 -left-4 hidden aspect-square w-40 rounded-marca border-[6px] border-creme sm:block lg:-left-12 lg:w-48"
             />
             <div
               aria-hidden="true"
