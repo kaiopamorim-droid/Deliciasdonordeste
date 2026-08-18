@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+  }
+
+  body {
+    @apply bg-creme text-carvao font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-verde text-creme;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme('colors.verde.DEFAULT');
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  /* Etiqueta em versalete — usada como microtipografia estrutural */
+  .etiqueta {
+    @apply font-mono text-[11px] uppercase tracking-etiqueta;
+  }
+
+  /* Motivo da estrutura de ferro do mercado: filete vertical repetido */
+  .trelica {
+    background-image: repeating-linear-gradient(
+      to right,
+      currentColor 0 1px,
+      transparent 1px 14px
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
