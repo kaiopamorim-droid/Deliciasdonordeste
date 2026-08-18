@@ -15,18 +15,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        verde: {
-          DEFAULT: '#14603F', // ⚠️ SUBSTITUIR pelo verde da logo
-          escuro: '#0A3222',
-          medio: '#1E7A51',
-          claro: '#DCE9E1',
-          vidro: '#F1F6F2',
-        },
-        creme: '#FBF9F4',
-        areia: '#EDE5D6',
-        carvao: '#141613',
-        cinza: '#6B7269',
-      },
+  verde: {
+    DEFAULT: '#FBF9F4',
+    escuro: '#0A3222',
+    medio: '#1E7A51',
+    claro: '#DCE9E1',
+    vidro: '#F1F6F2',
+  },
+  creme: '#14603F',
+  areia: '#EDE5D6',
+  carvao: '#141613',
+  cinza: '#6B7269',
+},
       fontFamily: {
         sans: ['"IBM Plex Sans"', 'system-ui', 'sans-serif'],
         serif: ['Newsreader', 'Georgia', 'serif'],
