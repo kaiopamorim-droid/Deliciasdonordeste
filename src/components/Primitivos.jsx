@@ -103,13 +103,9 @@ function MarcaDagua() {
 }
 
 /* ─────────────────────────────────────────────────────────────
- * Logo — reconstrução tipográfica temporária.
- * ⚠ SUBSTITUIR pelo arquivo oficial (SVG de preferência):
- *   coloque em /public/imagens/logo.svg e troque o corpo deste
- *   componente por <img src="/imagens/logo.svg" ... />.
- *   Não redimensionar de forma desproporcional.
+ * Logo — arquivo oficial da marca.
  * ───────────────────────────────────────────────────────────── */
-export function Logoexport function Logo({ tom = 'verde', className = '' }) {
+export function Logo({ tom = 'verde', className = '' }) {
   return (
     <span className={`inline-flex items-center ${className}`}>
       <img
@@ -117,31 +113,6 @@ export function Logoexport function Logo({ tom = 'verde', className = '' }) {
         alt="Delícias do Nordeste — Mercado Natural"
         className="h-11 w-auto sm:h-12"
       />
-    </span>
-  )
-} {
-  const cor = tom === 'claro' ? 'text-creme' : 'text-verde'
-  const sub = tom === 'claro' ? 'text-creme/60' : 'text-verde/55'
-
-  return (
-    <span className={`inline-flex items-center gap-2.5 ${className}`}>
-      <svg viewBox="0 0 32 32" className={`h-7 w-7 shrink-0 ${cor}`} aria-hidden="true">
-        <path
-          d="M16 3c3.6 0 6.5 2.9 6.5 6.5V15h1.8c2.6 0 4.7 2.1 4.7 4.7S26.9 24.4 24.3 24.4H7.7C5.1 24.4 3 22.3 3 19.7S5.1 15 7.7 15h1.8V9.5C9.5 5.9 12.4 3 16 3z"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.6"
-        />
-        <path d="M16 24.4V29" fill="none" stroke="currentColor" strokeWidth="1.6" />
-      </svg>
-      <span className="leading-none">
-        <span className={`block font-serif text-[19px] font-medium tracking-tight ${cor}`}>
-          Delícias do Nordeste
-        </span>
-        <span className={`etiqueta mt-[3px] block text-[9px] ${sub}`}>
-          Regionais &amp; Naturais
-        </span>
-      </span>
     </span>
   )
 }
