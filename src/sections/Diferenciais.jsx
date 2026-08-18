@@ -1,9 +1,9 @@
-import { diferenciais } from '../data/conteudo.js'
+﻿import { diferenciais } from '../data/conteudo.js'
 import { Icone, Revelar } from '../components/Primitivos.jsx'
 
 export default function Diferenciais() {
   return (
-    <section aria-label="Diferenciais" className="mt-24 lg:mt-36">
+    <section aria-label="Diferenciais" className="mt-12 lg:mt-20">
       <div className="mx-auto max-w-conteudo px-5 sm:px-8">
         <div className="grid gap-px overflow-hidden rounded-marca bg-verde/12 sm:grid-cols-2 lg:grid-cols-4">
           {diferenciais.map((item, i) => (
@@ -24,3 +24,4 @@ export default function Diferenciais() {
     </section>
   )
 }
+
