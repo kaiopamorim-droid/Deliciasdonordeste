@@ -69,7 +69,7 @@ export const diferenciais = [
   {
     titulo: 'Entrega para todo o Brasil',
     texto:
-      'Quem saiu do Nordeste continua recebendo em casa. É só combinar o pedido pelo WhatsApp.',
+      'Entregamos em todo Recife e região.',
     icone: 'caixa',
   },
   {
@@ -95,5 +95,6 @@ export const instagramPosts = Array.from({ length: 6 }, (_, i) => ({
   imagem: null,
   link: 'https://www.instagram.com/deliciasdonordestemercado/',
 }))
+
 
 
