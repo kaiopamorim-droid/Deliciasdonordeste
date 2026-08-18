@@ -24,7 +24,7 @@ export default function Sobre() {
             <div className="mt-7 space-y-5 text-[17px] leading-relaxed text-cinza">
               <p>
                 A Delícias do Nordeste nasceu em {marca.desde}, dentro dos mercados públicos de
-                Recife — o de São José e o de Boa Viagem. Dois endereços que fazem parte da rotina
+                Recife, o de São José e o de Boa Viagem. Dois endereços que fazem parte da rotina
                 da cidade há gerações e que continuam sendo o lugar onde se encontra o produto de
                 verdade.
               </p>
@@ -33,8 +33,8 @@ export default function Sobre() {
                 <em className="not-italic text-verde-escuro">
                   a sua casa completa de produtos regionais e naturais
                 </em>
-                . De um lado, o que é daqui — carne de sol, queijos, farinhas, doces. Do outro, o
-                que é natural — grãos, chás, ervas e itens que raramente aparecem em prateleira de
+                . De um lado, o que é daqui, carne de sol, queijos, farinhas, doces. Do outro, o
+                que é natural, grãos, chás, ervas e itens que raramente aparecem em prateleira de
                 supermercado.
               </p>
               <p>

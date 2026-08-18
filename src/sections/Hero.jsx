@@ -13,7 +13,7 @@ export default function Hero() {
               <em className="font-normal italic text-verde">regionais e naturais</em>.
             </h1>
             <p className="mt-7 max-w-lg text-[17px] leading-relaxed text-cinza sm:text-lg">
-              Duas bancas em Recife — no Mercado de São José e no Mercado de Boa Viagem — com
+              Duas bancas em Recife, no Mercado de São José e no Mercado de Boa Viagem, com
               produto escolhido item por item. E, para quem está longe, entrega para todo o Brasil.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">

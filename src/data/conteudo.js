@@ -12,7 +12,7 @@
     id: 'graos-e-farinhas',
     nome: 'Grãos e farinhas',
     descricao:
-      'Farinhas, arroz integral, grãos e proteínas vegetais — inclusive os itens difíceis de achar fora do mercado.',
+      'Farinhas, arroz integral, grãos e proteínas vegetais, inclusive os itens difíceis de achar fora do mercado.',
     imagem: '/imagens/produtos-graos-e-farinhas.jpg',
     arquivo: 'produtos-graos-e-farinhas.jpg',
     ativo: true,
@@ -63,7 +63,7 @@ export const diferenciais = [
   {
     titulo: 'Duas unidades em Recife',
     texto:
-      'Mercado de São José e Mercado de Boa Viagem — dois endereços tradicionais, o mesmo atendimento.',
+      'Mercado de São José e Mercado de Boa Viagem, dois endereços tradicionais, o mesmo atendimento.',
     icone: 'mapa',
   },
   {
