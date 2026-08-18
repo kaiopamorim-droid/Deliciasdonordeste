@@ -1,5 +1,5 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 710 710" width="710" height="710">
-  <rect width="710" height="710" fill="#ffffff"/>
+  <rect width="710" height="710" rx="140" fill="#ffffff"/>
   <g transform="translate(0,710) scale(0.1,-0.1)" fill="#14603F" stroke="none">
     <path d="M3375 5746 c-174 -34 -298 -99 -421 -221 -78 -77 -98 -104 -138 -185
 -65 -134 -88 -228 -88 -370 0 -111 25 -275 53 -347 l11 -28 36 45 c161 197
