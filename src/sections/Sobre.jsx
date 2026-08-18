@@ -8,7 +8,7 @@ export default function Sobre() {
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <Revelar>
             <Figura
-              imagem={null}
+              imagem="/imagens/sobre-loja.jpg"
               arquivo="sobre-loja.jpg"
               alt="Fachada da Delícias do Nordeste no mercado"
               className="aspect-[4/5] w-full rounded-marca"
@@ -55,3 +55,4 @@ export default function Sobre() {
     </section>
   )
 }
+
