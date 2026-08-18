@@ -16,13 +16,13 @@ export default {
     extend: {
       colors: {
   verde: {
-    DEFAULT: '#FBF9F4',
+    DEFAULT: '#14603F',
     escuro: '#0A3222',
     medio: '#1E7A51',
     claro: '#DCE9E1',
     vidro: '#F1F6F2',
   },
-  creme: '#14603F',
+  creme: '#FBF9F4',
   areia: '#EDE5D6',
   carvao: '#141613',
   cinza: '#6B7269',
