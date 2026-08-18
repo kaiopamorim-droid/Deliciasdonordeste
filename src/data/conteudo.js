@@ -67,9 +67,9 @@ export const diferenciais = [
     icone: 'mapa',
   },
   {
-    titulo: 'Entrega para todo o Brasil',
+    titulo: 'Entrega em Recife e região',
     texto:
-      'Entregamos em todo Recife e região.',
+      'Pedidos feitos pelo WhatsApp, com entrega rápida.',
     icone: 'caixa',
   },
   {
