@@ -21,7 +21,7 @@ export default function Destaque() {
             <Figura
               imagem={null}
               arquivo="destaque-produto.jpg"
-              alt="ComposiÃ§Ã£o de produtos da DelÃ­cias do Nordeste"
+              alt="Composição de produtos da Delícias do Nordeste"
               className="aspect-[4/3] w-full rounded-marca border border-creme/15 !bg-verde-escuro/40"
             />
           </Revelar>
@@ -30,5 +30,3 @@ export default function Destaque() {
     </section>
   )
 }
-
-
