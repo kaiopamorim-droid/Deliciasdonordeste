@@ -13,7 +13,7 @@ export default function Hero() {
               <em className="font-normal italic text-verde">regionais e naturais</em>.
             </h1>
             <p className="mt-7 max-w-lg text-[17px] leading-relaxed text-cinza sm:text-lg">
-              Duas bancas em Recife, no Mercado de São José e no Mercado de Boa Viagem, com
+              Duas bancas em Recife — no Mercado de São José e no Mercado de Boa Viagem — com
               produto escolhido item por item, com entrega rápida em Recife e região.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -28,22 +28,6 @@ export default function Hero() {
                 Fale pelo WhatsApp
               </Botao>
             </div>
-            <dl className="mt-12 flex flex-wrap items-center gap-x-10 gap-y-5 border-t border-verde/12 pt-7">
-              <div>
-                <dt className="etiqueta text-verde/55">No mercado desde</dt>
-                <dd className="mt-1.5 font-serif text-2xl text-verde-escuro">{marca.desde}</dd>
-              </div>
-              <div>
-                <dt className="etiqueta text-verde/55">Unidades</dt>
-                <dd className="mt-1.5 font-serif text-2xl text-verde-escuro">
-                  São José <span className="text-verde/40">·</span> Boa Viagem
-                </dd>
-              </div>
-              <div>
-                <dt className="etiqueta text-verde/55">Entrega</dt>
-                <dd className="mt-1.5 font-serif text-2xl text-verde-escuro">Recife e região</dd>
-              </div>
-            </dl>
           </div>
           {/* Composição de imagens */}
           <div className="relative">
@@ -53,10 +37,10 @@ export default function Hero() {
               alt="Banca da Delícias do Nordeste com produtos regionais expostos"
               prioridade
               className="aspect-[16/10] w-full rounded-marca"
-            />          </div>
+            />
+          </div>
         </div>
       </div>
     </section>
   )
 }
-
