@@ -1,4 +1,4 @@
-import { linkWhatsApp, whatsapp } from '../data/site.js'
+﻿import { linkWhatsApp, whatsapp } from '../data/site.js'
 import { Revelar, IconeWhatsApp } from '../components/Primitivos.jsx'
 
 export default function CTA() {
