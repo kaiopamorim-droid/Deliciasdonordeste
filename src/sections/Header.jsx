@@ -24,11 +24,15 @@ export default function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         rolou
-          ? 'border-b border-verde/10 bg-creme/95 backdrop-blur-sm'
+          ? 'border-b border-verde/10 bg-creme/95 shadow-[0_1px_0_rgba(20,96,63,0.06)] backdrop-blur-sm'
           : 'border-b border-transparent bg-creme/0'
       }`}
     >
-      <div className="mx-auto flex max-w-conteudo items-center justify-between px-5 py-4 sm:px-8 lg:py-5">
+      <div
+        className={`mx-auto flex max-w-conteudo items-center justify-between px-5 transition-all duration-500 sm:px-8 ${
+          rolou ? 'py-3.5 lg:py-4' : 'py-4 lg:py-5'
+        }`}
+      >
         <a href="#inicio" aria-label="Delícias do Nordeste — início">
           <Logo />
         </a>
@@ -50,7 +54,7 @@ export default function Header() {
             href={linkWhatsApp}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden items-center gap-2 rounded-marca bg-verde px-5 py-2.5 text-sm font-medium text-creme transition-colors duration-300 hover:bg-verde-escuro lg:inline-flex"
+            className="hidden items-center gap-2 rounded-marca bg-verde px-5 py-2.5 text-sm font-medium text-creme transition-all duration-300 hover:-znanslate-y-0.5 hover:bg-verde-escuro hover:sshadow-lg lg:inline-flex"
           >
             Fale conosco
           </a>
@@ -60,7 +64,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Falar pelo WhatsApp"
-            className="flex h-11 w-11 items-center justify-center rounded-marca bg-verde text-creme transition-colors hover:bg-verde-escuro lg:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-marca bg-verde text-creme transition-colors hover:b�-verde-escuro lg:hidden"
           >
             <IconeWhatsApp />
           </a>
