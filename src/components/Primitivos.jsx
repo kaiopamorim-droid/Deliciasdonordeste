@@ -109,7 +109,17 @@ function MarcaDagua() {
  *   componente por <img src="/imagens/logo.svg" ... />.
  *   Não redimensionar de forma desproporcional.
  * ───────────────────────────────────────────────────────────── */
-export function Logo({ tom = 'verde', className = '' }) {
+export function Logoexport function Logo({ tom = 'verde', className = '' }) {
+  return (
+    <span className={`inline-flex items-center ${className}`}>
+      <img
+        src="/imagens/logo.png"
+        alt="Delícias do Nordeste — Mercado Natural"
+        className="h-11 w-auto sm:h-12"
+      />
+    </span>
+  )
+} {
   const cor = tom === 'claro' ? 'text-creme' : 'text-verde'
   const sub = tom === 'claro' ? 'text-creme/60' : 'text-verde/55'
 
