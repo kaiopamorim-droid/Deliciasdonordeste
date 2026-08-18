@@ -1,4 +1,4 @@
-import { Figura, Revelar } from '../components/Primitivos.jsx'
+﻿import { Figura, Revelar } from '../components/Primitivos.jsx'
 
 export default function Destaque() {
   return (
@@ -6,10 +6,8 @@ export default function Destaque() {
       <div className="mx-auto max-w-conteudo px-5 sm:px-8">
         <div className="grid items-center gap-10 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20 lg:py-24">
           <Revelar>
-            <span aria-hidden="true" className="trelica block h-10 w-24 text-creme/30" />
-
             <p className="mt-8 font-serif text-[32px] leading-[1.2] tracking-[-0.01em] text-creme sm:text-[40px] lg:text-[46px]">
-              Casa completa quer dizer isso: você entra atrás de uma coisa e sai com a semana
+              Casa completa quer dizer isso: vocÃª entra atrÃ¡s de uma coisa e sai com a semana
               resolvida.
             </p>
 
@@ -23,7 +21,7 @@ export default function Destaque() {
             <Figura
               imagem={null}
               arquivo="destaque-produto.jpg"
-              alt="Composição de produtos da Delícias do Nordeste"
+              alt="ComposiÃ§Ã£o de produtos da DelÃ­cias do Nordeste"
               className="aspect-[4/3] w-full rounded-marca border border-creme/15 !bg-verde-escuro/40"
             />
           </Revelar>
@@ -32,3 +30,4 @@ export default function Destaque() {
     </section>
   )
 }
+

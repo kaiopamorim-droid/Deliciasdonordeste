@@ -53,14 +53,10 @@ export default function Hero() {
               alt="Banca da Delícias do Nordeste com produtos regionais expostos"
               prioridade
               className="aspect-[16/10] w-full rounded-marca"
-            />
-            <div
-              aria-hidden="true"
-              className="trelica absolute -right-3 -top-6 hidden h-24 w-28 text-verde/20 lg:block"
-            />
-          </div>
+            />          </div>
         </div>
       </div>
     </section>
   )
 }
+
