@@ -1,7 +1,7 @@
-/*
- * ══════════════════════════════════════════════════════════════
+﻿/*
+ * ═══════════════════════════════════════════════════════════════
  * DADOS DA EMPRESA — FONTE ÚNICA DE VERDADE
- * ══════════════════════════════════════════════════════════════
+ * ═══════════════════════════════════════════════════════════════
  * Tudo que aparece na página vem daqui.
  *
  * Legenda das marcações:
@@ -12,7 +12,6 @@
 
 export const marca = {
   nome: 'Delícias do Nordeste', // ✔ CONFIRMADO
-  // ✔ CONFIRMADO — bio oficial do Instagram @deliciasdonordestemercado
   bio: 'A sua Casa completa de Produtos Regionais e Naturais!',
   entrega: 'Entregamos para todo o Brasil', // ✔ CONFIRMADO — bio do Instagram
   desde: 2016, // ✔ CONFIRMADO — abertura em 30/08/2016 (registro público de CNPJ)
@@ -23,13 +22,14 @@ export const marca = {
 }
 
 /*
- * ⚠ CONFIRMAR — número de celular que consta no registro público da empresa.
- * Confirmar com o cliente se este é o WhatsApp comercial antes de publicar.
+ * ✔ CONFIRMADO — WhatsApp comercial de cada unidade, informado pelo cliente.
+ * O botão geral do site ("Fale conosco") usa o número da unidade Boa Viagem
+ * como padrão. Cada unidade também tem seu próprio link na seção de localização.
  * Formato obrigatório: 55 + DDD + número, apenas dígitos.
  */
 export const whatsapp = {
-  numero: '5581987341303',
-  exibicao: '(81) 98734-1303',
+  numero: '5581989990747',
+  exibicao: '(81) 98999-0747',
   mensagem: 'Olá! Vim pelo site e gostaria de saber mais sobre os produtos.',
 }
 
@@ -47,7 +47,11 @@ export const unidades = [
     cep: '51021-020', // ✔ CONFIRMADO
     telefone: '(81) 3325-1664', // ✔ CONFIRMADO
     telefoneLink: 'tel:+558133251664',
-    // ✔ CONFIRMADO — horários publicados na ficha do Google
+    whatsapp: '5581989990747', // ✔ CONFIRMADO
+    whatsappExibicao: '(81) 98999-0747',
+    whatsappLink: `https://wa.me/5581989990747?text=${encodeURIComponent(
+      'Olá! Vim pelo site e gostaria de saber mais sobre os produtos.',
+    )}`,
     horarios: [
       { dias: 'Segunda a sexta', horas: '7h às 18h' },
       { dias: 'Sábado', horas: '7h às 15h30' },
@@ -66,6 +70,11 @@ export const unidades = [
     cep: null,
     telefone: null, // ✎ PREENCHER
     telefoneLink: null,
+    whatsapp: '5581997577140', // ✔ CONFIRMADO
+    whatsappExibicao: '(81) 99757-7140',
+    whatsappLink: `https://wa.me/5581997577140?text=${encodeURIComponent(
+      'Olá! Vim pelo site e gostaria de saber mais sobre os produtos.',
+    )}`,
     horarios: [], // ✎ PREENCHER — horários desta unidade
     mapa: 'https://www.google.com/maps/search/?api=1&query=Delicias+do+Nordeste+Mercado+de+Sao+Jose+Recife',
     mapaEmbed:
