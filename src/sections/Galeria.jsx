@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+﻿import { useCallback, useState } from 'react'
 import { galeria } from '../data/conteudo.js'
 import { Figura, Revelar, TituloSecao } from '../components/Primitivos.jsx'
 import Lightbox from '../components/Lightbox.jsx'
@@ -20,8 +20,7 @@ export default function Galeria() {
         <Revelar>
           <TituloSecao
             etiqueta="Galeria"
-            titulo="O balcão, de perto."
-            apoio="Fotografias das lojas e dos produtos. Clique em qualquer imagem para ampliar."
+            titulo="O balcÃ£o, de perto."
           />
           <span id="titulo-galeria" className="sr-only">
             Galeria de fotos
@@ -84,3 +83,4 @@ function BotaoImagem({ item, indice, aoAbrir, className = '' }) {
     </button>
   )
 }
+
