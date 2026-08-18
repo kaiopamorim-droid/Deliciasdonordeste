@@ -20,7 +20,7 @@ export default function Galeria() {
         <Revelar>
           <TituloSecao
             etiqueta="Galeria"
-            titulo="O balcÃ£o, de perto."
+            titulo="O balcão, de perto."
           />
           <span id="titulo-galeria" className="sr-only">
             Galeria de fotos
@@ -83,4 +83,5 @@ function BotaoImagem({ item, indice, aoAbrir, className = '' }) {
     </button>
   )
 }
+
 

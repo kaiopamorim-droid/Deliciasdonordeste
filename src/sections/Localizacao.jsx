@@ -34,7 +34,7 @@ export default function Localizacao() {
 
             <dl className="mt-8 space-y-6 text-[15px]">
               <div>
-                <dt className="etiqueta text-verde/55">EndereÃ§o</dt>
+                <dt className="etiqueta text-verde/55">Endereço</dt>
                 <dd className="mt-2 leading-relaxed text-carvao/85">
                   {unidade.endereco}
                   <br />
@@ -44,7 +44,7 @@ export default function Localizacao() {
               </div>
 
               <div>
-                <dt className="etiqueta text-verde/55">HorÃ¡rio</dt>
+                <dt className="etiqueta text-verde/55">Horário</dt>
                 <dd className="mt-2 space-y-1.5 text-carvao/85">
                   {unidade.horarios.length > 0 ? (
                     unidade.horarios.map((h) => (
@@ -54,7 +54,7 @@ export default function Localizacao() {
                       </p>
                     ))
                   ) : (
-                    <p className="font-mono text-[13px] text-cinza">âœŽ HorÃ¡rio a confirmar com a loja</p>
+                    <p className="font-mono text-[13px] text-cinza">âœŽ Horário a confirmar com a loja</p>
                   )}
                 </dd>
               </div>
@@ -81,7 +81,7 @@ export default function Localizacao() {
           </div>
 
           <div className="min-h-[320px] bg-creme lg:min-h-[520px]">
-            <iframe key={unidade.id} title={`Mapa â€” ${unidade.nome}`} src={unidade.mapaEmbed} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="h-full min-h-[320px] w-full border-0 grayscale-[35%]" />
+            <iframe key={unidade.id} title={`Mapa — ${unidade.nome}`} src={unidade.mapaEmbed} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="h-full min-h-[320px] w-full border-0 grayscale-[35%]" />
           </div>
         </Revelar>
       </div>
