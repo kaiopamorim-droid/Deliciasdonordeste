@@ -7,8 +7,7 @@ export default function Destaque() {
         <div className="grid items-center gap-10 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20 lg:py-24">
           <Revelar>
             <p className="mt-8 font-serif text-[32px] leading-[1.2] tracking-[-0.01em] text-creme sm:text-[40px] lg:text-[46px]">
-              Casa completa quer dizer isso: você entra através de uma coisa e sai com a semana
-              resolvida.
+              Tudo que você procura em um só lugar.
             </p>
 
             <p className="mt-7 max-w-md text-[17px] leading-relaxed text-creme/75">
@@ -30,3 +29,4 @@ export default function Destaque() {
     </section>
   )
 }
+
