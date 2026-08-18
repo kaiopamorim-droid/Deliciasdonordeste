@@ -1,27 +1,10 @@
-/*
- * ══════════════════════════════════════════════════════════════
- * CATEGORIAS, DIFERENCIAIS E GALERIA
- * ══════════════════════════════════════════════════════════════
- * As categorias abaixo foram derivadas de fontes públicas: a atividade
- * registrada da empresa (comércio varejista de laticínios, frios e
- * conservas) e as menções de clientes nas avaliações públicas das duas
- * unidades. NENHUMA foi inventada.
- *
- * `ativo: false` = categoria provável, mas não confirmada. Ela não aparece
- * na página. Basta trocar para `true` depois de validar com o cliente.
- *
- * `imagem` = caminho do arquivo dentro de /public/imagens/.
- * Enquanto for `null`, o componente <Figura> mostra um espaço reservado
- * com o nome exato do arquivo esperado. Veja /public/imagens/LEIA-ME.md.
- */
-
-export const categorias = [
+﻿export const categorias = [
   {
     id: 'carnes-e-frios',
     nome: 'Carnes e frios',
     descricao:
       'Carne de sol, queijos e frios da região, cortados e pesados na hora, do jeito que o cliente pede.',
-    imagem: null,
+    imagem: '/imagens/produtos-carnes-e-frios.jpg',
     arquivo: 'produtos-carnes-e-frios.jpg',
     ativo: true,
   },
@@ -30,7 +13,7 @@ export const categorias = [
     nome: 'Grãos e farinhas',
     descricao:
       'Farinhas, arroz integral, grãos e proteínas vegetais — inclusive os itens difíceis de achar fora do mercado.',
-    imagem: null,
+    imagem: '/imagens/produtos-graos-e-farinhas.jpg',
     arquivo: 'produtos-graos-e-farinhas.jpg',
     ativo: true,
   },
@@ -39,7 +22,7 @@ export const categorias = [
     nome: 'Naturais e chás',
     descricao:
       'Uma seleção larga de chás, ervas e produtos naturais, montada ao longo de anos de balcão.',
-    imagem: null,
+    imagem: '/imagens/produtos-naturais-e-chas.jpg',
     arquivo: 'produtos-naturais-e-chas.jpg',
     ativo: true,
   },
@@ -48,11 +31,10 @@ export const categorias = [
     nome: 'Doces e conservas',
     descricao:
       'Doces regionais e conservas de frutas e legumes, para levar o sabor de casa em qualquer lugar.',
-    imagem: null,
+    imagem: '/imagens/produtos-doces-e-conservas.jpg',
     arquivo: 'produtos-doces-e-conservas.jpg',
     ativo: true,
   },
-  // ── Abaixo: categorias a validar antes de publicar ──
   {
     id: 'temperos',
     nome: 'Temperos',
@@ -71,10 +53,6 @@ export const categorias = [
   },
 ]
 
-/*
- * Diferenciais — todos ancorados em informação pública verificável:
- * a bio oficial, as duas unidades e o tempo de casa (desde 2016).
- */
 export const diferenciais = [
   {
     titulo: 'Regional e natural no mesmo balcão',
@@ -102,11 +80,6 @@ export const diferenciais = [
   },
 ]
 
-/*
- * Galeria — composição editorial assimétrica.
- * `destaque: true` ocupa o bloco grande.
- * Substitua `imagem: null` pelo caminho do arquivo em /public/imagens/.
- */
 export const galeria = [
   { id: 'g1', arquivo: 'galeria-01-banca.jpg', alt: 'Banca da Delícias do Nordeste no mercado', destaque: true, imagem: null },
   { id: 'g2', arquivo: 'galeria-02-graos.jpg', alt: 'Grãos e farinhas expostos a granel', imagem: null },
@@ -116,11 +89,9 @@ export const galeria = [
   { id: 'g6', arquivo: 'galeria-06-atendimento.jpg', alt: 'Atendimento no balcão da loja', imagem: null },
 ]
 
-/* Grade do Instagram — 6 publicações recentes, prontas para receber as imagens. */
 export const instagramPosts = Array.from({ length: 6 }, (_, i) => ({
   id: `ig-${i + 1}`,
   arquivo: `instagram-0${i + 1}.jpg`,
   imagem: null,
-  // ✎ PREENCHER com o link da publicação real; por ora aponta para o perfil.
   link: 'https://www.instagram.com/deliciasdonordestemercado/',
 }))
