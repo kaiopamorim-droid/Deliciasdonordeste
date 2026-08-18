@@ -84,8 +84,8 @@ export const galeria = [
   { id: 'g1', arquivo: 'galeria-01-banca.jpg', alt: 'Banca da Delícias do Nordeste no mercado', destaque: true, imagem: '/imagens/galeria-01-banca.jpg' },
   { id: 'g2', arquivo: 'galeria-02-graos.jpg', alt: 'Grãos e farinhas expostos a granel', imagem: '/imagens/galeria-02-graos.jpg' },
   { id: 'g3', arquivo: 'galeria-03-carne-de-sol.jpg', alt: 'Carne de sol e frios sobre a bancada', imagem: '/imagens/galeria-03-carne-de-sol.jpg' },
-  { id: 'g4', arquivo: 'galeria-04-chas.jpg', alt: 'Prateleira de chás e ervas', imagem: null },
-  { id: 'g5', arquivo: 'galeria-05-doces.jpg', alt: 'Doces regionais embalados', imagem: null },
+  { id: 'g4', arquivo: 'galeria-04-chas.jpg', alt: 'Temperos e ervas expostos a granel', imagem: '/imagens/galeria-04-chas.jpg' },
+  { id: 'g5', arquivo: 'galeria-05-doces.jpg', alt: 'Queijo coalho e produtos de balcão', imagem: '/imagens/galeria-05-doces.jpg' },
   { id: 'g6', arquivo: 'galeria-06-atendimento.jpg', alt: 'Atendimento no balcão da loja', imagem: '/imagens/galeria-06-atendimento.jpg' },
 ]
 
@@ -95,3 +95,5 @@ export const instagramPosts = Array.from({ length: 6 }, (_, i) => ({
   imagem: null,
   link: 'https://www.instagram.com/deliciasdonordestemercado/',
 }))
+
+
