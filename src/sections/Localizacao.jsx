@@ -17,47 +17,20 @@ export default function Localizacao() {
           />
         </Revelar>
 
-        {/* Alternador de unidade */}
         <Revelar atraso={80} className="mt-10">
-          <div
-            role="tablist"
-            aria-label="Escolha a unidade"
-            className="inline-flex rounded-marca border border-verde/20 p-1"
-          >
+          <div role="tablist" aria-label="Escolha a unidade" className="inline-flex rounded-marca border border-verde/20 p-1">
             {unidades.map((u) => (
-              <button
-                key={u.id}
-                role="tab"
-                aria-selected={ativa === u.id}
-                aria-controls={`painel-${u.id}`}
-                id={`aba-${u.id}`}
-                onClick={() => setAtiva(u.id)}
-                className={`rounded-[2px] px-5 py-2.5 text-sm transition-colors duration-300 ${
-                  ativa === u.id
-                    ? 'bg-verde text-creme'
-                    : 'text-verde/70 hover:text-verde'
-                }`}
-              >
+              <button key={u.id} role="tab" aria-selected={ativa === u.id} aria-controls={`painel-${u.id}`} id={`aba-${u.id}`} onClick={() => setAtiva(u.id)} className={`rounded-[2px] px-5 py-2.5 text-sm transition-colors duration-300 ${ativa === u.id ? 'bg-verde text-creme' : 'text-verde/70 hover:text-verde'}`}>
                 {u.nome}
               </button>
             ))}
           </div>
         </Revelar>
 
-        <Revelar
-          atraso={120}
-          className="mt-8 grid gap-px overflow-hidden rounded-marca bg-verde/12 lg:grid-cols-[0.85fr_1.15fr]"
-        >
-          <div
-            role="tabpanel"
-            id={`painel-${unidade.id}`}
-            aria-labelledby={`aba-${unidade.id}`}
-            className="bg-creme p-8 lg:p-10"
-          >
+        <Revelar atraso={120} className="mt-8 grid gap-px overflow-hidden rounded-marca bg-verde/12 lg:grid-cols-[0.85fr_1.15fr]">
+          <div role="tabpanel" id={`painel-${unidade.id}`} aria-labelledby={`aba-${unidade.id}`} className="bg-creme p-8 lg:p-10">
             <p className="etiqueta text-verde/60">{unidade.box}</p>
-            <h3 className="mt-4 font-serif text-[28px] leading-tight text-verde-escuro">
-              {unidade.nome}
-            </h3>
+            <h3 className="mt-4 font-serif text-[28px] leading-tight text-verde-escuro">{unidade.nome}</h3>
 
             <dl className="mt-8 space-y-6 text-[15px]">
               <div>
@@ -66,12 +39,7 @@ export default function Localizacao() {
                   {unidade.endereco}
                   <br />
                   {unidade.bairro}
-                  {unidade.cep && (
-                    <>
-                      <br />
-                      CEP {unidade.cep}
-                    </>
-                  )}
+                  {unidade.cep && (<><br />CEP {unidade.cep}</>)}
                 </dd>
               </div>
 
@@ -86,9 +54,7 @@ export default function Localizacao() {
                       </p>
                     ))
                   ) : (
-                    <p className="font-mono text-[13px] text-cinza">
-                      ✎ Horário a confirmar com a loja
-                    </p>
+                    <p className="font-mono text-[13px] text-cinza">✎ Horário a confirmar com a loja</p>
                   )}
                 </dd>
               </div>
@@ -97,62 +63,25 @@ export default function Localizacao() {
                 <dt className="etiqueta text-verde/55">Contato</dt>
                 <dd className="mt-2 space-y-1.5 text-carvao/85">
                   {unidade.telefone ? (
-                    <p>
-                      
-                        href={unidade.telefoneLink}
-                        className="transition-colors hover:text-verde"
-                      >
-                        {unidade.telefone}
-                      </a>
-                    </p>
+                    <p><a href={unidade.telefoneLink} className="transition-colors hover:text-verde">{unidade.telefone}</a></p>
                   ) : (
-                    <p className="font-mono text-[13px] text-cinza">
-                      ✎ Telefone a confirmar com a loja
-                    </p>
+                    <p className="font-mono text-[13px] text-cinza">✎ Telefone a confirmar com a loja</p>
                   )}
-                  <p>
-                    
-                      href={unidade.whatsappLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="transition-colors hover:text-verde"
-                    >
-                      WhatsApp {unidade.whatsappExibicao}
-                    </a>
-                  </p>
+                  <p><a href={unidade.whatsappLink} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-verde">WhatsApp {unidade.whatsappExibicao}</a></p>
                 </dd>
               </div>
             </dl>
 
-            
-              href={unidade.mapa}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-9 inline-flex items-center gap-2 rounded-marca bg-verde px-6 py-3.5 text-[15px] font-medium text-creme transition-colors duration-300 hover:bg-verde-escuro"
-            >
+            <a href={unidade.mapa} target="_blank" rel="noopener noreferrer" className="mt-9 inline-flex items-center gap-2 rounded-marca bg-verde px-6 py-3.5 text-[15px] font-medium text-creme transition-colors duration-300 hover:bg-verde-escuro">
               Como chegar
-              <svg
-                viewBox="0 0 16 16"
-                className="h-3.5 w-3.5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.6"
-                aria-hidden="true"
-              >
+              <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
                 <path d="M6 3h7v7M13 3 3.5 12.5" />
               </svg>
             </a>
           </div>
 
           <div className="min-h-[320px] bg-creme lg:min-h-[520px]">
-            <iframe
-              key={unidade.id}
-              title={`Mapa — ${unidade.nome}`}
-              src={unidade.mapaEmbed}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="h-full min-h-[320px] w-full border-0 grayscale-[35%]"
-            />
+            <iframe key={unidade.id} title={`Mapa — ${unidade.nome}`} src={unidade.mapaEmbed} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="h-full min-h-[320px] w-full border-0 grayscale-[35%]" />
           </div>
         </Revelar>
       </div>
