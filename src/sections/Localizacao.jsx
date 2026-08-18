@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { unidades, linkWhatsApp, whatsapp } from '../data/site.js'
+﻿import { useState } from 'react'
+import { unidades } from '../data/site.js'
 import { Revelar, TituloSecao } from '../components/Primitivos.jsx'
 
 export default function Localizacao() {
@@ -98,7 +98,7 @@ export default function Localizacao() {
                 <dd className="mt-2 space-y-1.5 text-carvao/85">
                   {unidade.telefone ? (
                     <p>
-                      <a
+                      
                         href={unidade.telefoneLink}
                         className="transition-colors hover:text-verde"
                       >
@@ -111,20 +111,20 @@ export default function Localizacao() {
                     </p>
                   )}
                   <p>
-                    <a
-                      href={linkWhatsApp}
+                    
+                      href={unidade.whatsappLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="transition-colors hover:text-verde"
                     >
-                      WhatsApp {whatsapp.exibicao}
+                      WhatsApp {unidade.whatsappExibicao}
                     </a>
                   </p>
                 </dd>
               </div>
             </dl>
 
-            <a
+            
               href={unidade.mapa}
               target="_blank"
               rel="noopener noreferrer"
