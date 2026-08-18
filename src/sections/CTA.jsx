@@ -27,7 +27,6 @@ export default function CTA() {
             Falar pelo WhatsApp
           </a>
 
-          <p className="mt-6 font-mono text-[13px] text-creme/45">{whatsapp.exibicao}</p>
         </Revelar>
       </div>
     </section>
