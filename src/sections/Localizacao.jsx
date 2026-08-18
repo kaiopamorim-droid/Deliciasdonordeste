@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import { unidades } from '../data/site.js'
 import { Revelar, TituloSecao } from '../components/Primitivos.jsx'
 
