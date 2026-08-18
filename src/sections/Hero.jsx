@@ -14,7 +14,7 @@ export default function Hero() {
             </h1>
             <p className="mt-7 max-w-lg text-[17px] leading-relaxed text-cinza sm:text-lg">
               Duas bancas em Recife, no Mercado de São José e no Mercado de Boa Viagem, com
-              produto escolhido item por item. E, para quem está longe, entrega para todo o Brasil.
+              produto escolhido item por item, com entrega rápida em Recife e região.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Botao href="#produtos">Conheça nossos produtos</Botao>
@@ -40,8 +40,8 @@ export default function Hero() {
                 </dd>
               </div>
               <div>
-                <dt className="etiqueta text-verde/55">Envio</dt>
-                <dd className="mt-1.5 font-serif text-2xl text-verde-escuro">Todo o Brasil</dd>
+                <dt className="etiqueta text-verde/55">Entrega</dt>
+                <dd className="mt-1.5 font-serif text-2xl text-verde-escuro">Recife e região</dd>
               </div>
             </dl>
           </div>
