@@ -1,4 +1,4 @@
-import { instagramPosts } from '../data/conteudo.js'
+﻿import { instagramPosts } from '../data/conteudo.js'
 import { linkWhatsApp } from '../data/site.js'
 import { Figura, Revelar, TituloSecao } from '../components/Primitivos.jsx'
 
@@ -25,12 +25,12 @@ export default function Instagram() {
                 <Figura
                   imagem={post.imagem}
                   arquivo={post.arquivo}
-                  alt="Produto da Delícias do Nordeste"
+                  alt="Produto da DelÃ­cias do Nordeste"
                   className="aspect-square w-full rounded-marca"
                   imgClassName="group-hover:scale-[1.05]"
                 />
                 <span className="etiqueta mt-4 inline-flex items-center gap-1.5 text-verde transition-transform duration-300 group-hover:translate-x-1">
-                  Pergunte no WhatsApp
+                  Perguntar no WhatsApp
                   <svg
                     viewBox="0 0 16 16"
                     className="h-3 w-3"
@@ -50,3 +50,4 @@ export default function Instagram() {
     </section>
   )
 }
+
