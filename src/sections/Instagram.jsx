@@ -1,4 +1,5 @@
 import { instagramPosts } from '../data/conteudo.js'
+import { linkWhatsApp } from '../data/site.js'
 import { Figura, Revelar, TituloSecao } from '../components/Primitivos.jsx'
 
 export default function Instagram() {
@@ -8,27 +9,39 @@ export default function Instagram() {
         <Revelar>
           <TituloSecao titulo="Mais produtos" />
           <span id="titulo-instagram" className="sr-only">
-            Instagram
+            Mais produtos
           </span>
         </Revelar>
 
-        <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
           {instagramPosts.map((post, i) => (
             <Revelar key={post.id} atraso={i * 60}>
               <a
-                href={post.link}
+                href={linkWhatsApp}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Abrir publicação no Instagram da Delícias do Nordeste"
-                className="group block overflow-hidden rounded-marca"
+                className="group block"
               >
                 <Figura
                   imagem={post.imagem}
                   arquivo={post.arquivo}
-                  alt="Publicação do Instagram da Delícias do Nordeste"
-                  className="aspect-square w-full"
+                  alt="Produto da Delícias do Nordeste"
+                  className="aspect-square w-full rounded-marca"
                   imgClassName="group-hover:scale-[1.05]"
                 />
+                <span className="etiqueta mt-4 inline-flex items-center gap-1.5 text-verde transition-transform duration-300 group-hover:translate-x-1">
+                  Pergunte no WhatsApp
+                  <svg
+                    viewBox="0 0 16 16"
+                    className="h-3 w-3"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    aria-hidden="true"
+                  >
+                    <path d="M2 8h11M9 4l4 4-4 4" />
+                  </svg>
+                </span>
               </a>
             </Revelar>
           ))}
