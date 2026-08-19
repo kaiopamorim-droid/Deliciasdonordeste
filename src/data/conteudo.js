@@ -39,7 +39,7 @@
     id: 'temperos',
     nome: 'Temperos',
     descricao: '✎ PREENCHER com a descrição real desta categoria.',
-    imagem: null,
+    imagem: `/imagens/instagram-0${i + 1}.jpg`,
     arquivo: 'produtos-temperos.jpg',
     ativo: false,
   },
@@ -47,7 +47,7 @@
     id: 'bebidas',
     nome: 'Bebidas',
     descricao: '✎ PREENCHER com a descrição real desta categoria.',
-    imagem: null,
+    imagem: `/imagens/instagram-0${i + 1}.jpg`,
     arquivo: 'produtos-bebidas.jpg',
     ativo: false,
   },
@@ -92,9 +92,10 @@ export const galeria = [
 export const instagramPosts = Array.from({ length: 6 }, (_, i) => ({
   id: `ig-${i + 1}`,
   arquivo: `instagram-0${i + 1}.jpg`,
-  imagem: null,
+  imagem: `/imagens/instagram-0${i + 1}.jpg`,
   link: 'https://www.instagram.com/deliciasdonordestemercado/',
 }))
+
 
 
 
