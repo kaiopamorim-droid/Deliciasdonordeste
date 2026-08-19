@@ -96,3 +96,5 @@ export const seo = {
     'Casa completa de produtos regionais e naturais em Recife. Duas unidades: Mercado de São José e Mercado de Boa Viagem. Entregamos para todo o Brasil.',
   url: 'https://deliciasdonordeste.com.br', // ✎ PREENCHER com o domínio final
 }
+
+
